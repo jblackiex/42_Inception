@@ -1,0 +1,72 @@
+version: '3.5'
+
+services:
+  nginx:
+    container_name: nginx_server
+    build: requirements/nginx
+    image: nginx
+    ports:
+      - 443:443
+    volumes:
+      - wp:/var/www/html
+      - certs:/etc/nginx/ssl
+    restart: always
+    networks:
+      - inception
+    depends_on:
+      - wordpress
+    env_file:
+      - .env
+
+  wordpress:
+    container_name: wordpress_server
+    build: requirements/wordpress
+    image: wordpress
+    volumes:
+      - wp:/var/www/html
+    restart: always
+    depends_on:
+      - mariadb
+    networks:
+      - inception
+    env_file:
+      - .env
+  
+  mariadb:
+    container_name: mariadb_server
+    build: requirements/mariadb
+    image: mariadb
+    volumes:
+      - db:/var/lib/mysql
+    restart: always
+    networks:
+      - inception
+    env_file:
+      - .env
+    
+networks:
+  inception:
+    driver: bridge
+
+volumes:
+  db:
+    driver: local
+    name: db_volume
+    driver_opts:
+      type: none
+      device: /your/path/to/db
+      o: bind
+
+  wp:
+    driver: local
+    name: wp_volume
+    driver_opts:
+      type: none
+      device: /your/path/to/wp
+      o: bind #modalita' condivisione tra container e host
+  certs:
+    driver: local
+    driver_opts:
+      type: none
+      device: /root/certs
+      o: bind
