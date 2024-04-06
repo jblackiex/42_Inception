@@ -30,4 +30,4 @@ Click below to explore PodereIlGufo property and discover what makes PodereIlGuf
 - **Fully Containerized**: Each component of this web infrastructure is encapsulated in Docker containers, ensuring consistency, scalability, and ease of deployment.
 - **Nginx Integration**: High performance and reliability of Nginx for serving static content and acting as a reverse proxy for WordPress site. This is the only container exposed to the outside world.
 
-![Infrastructure](Infrastructure.jpg)
+![Infrastructure](Infrastructure.png)
