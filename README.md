@@ -1,4 +1,4 @@
-# 🏡 [PodereIlGufo](http://podereilgufo2-jb2.pitunnel.com) Web Infrastructure
+# 🏡 [PodereIlGufo](http://podereilgufo-jb2.pitunnel.com) Web Infrastructure
 
 Welcome to the GitHub repository for the [PodereIlGufo](http://podereilgufo2-jb2.pitunnel.com) real estate property's web infrastructure! This repository hosts the robust Docker-compose setup that orchestrates a trio of interconnected containers, each playing a vital role in delivering a seamless web experience.
 
@@ -10,7 +10,7 @@ This architecture comprises three containers:
 2. **WordPress & PHP Container**: Powers dynamic content, providing a flexible and user-friendly interface for website management and blogging – all backed by the robust PHP processing.
 3. **MariaDB (MySQL) Container**: The backbone of data storage, MariaDB offers a reliable and high-performance database solution, ensuring all website data is securely managed and readily accessible.
 
-This infrastructure is the digital foundation of [PodereIlGufo](http://podereilgufo2-jb2.pitunnel.com)'s online presence, showcasing property details, amenities, and other content essential for connecting with potential clients and the real estate community.
+This infrastructure is the digital foundation of [PodereIlGufo](http://podereilgufo-jb2.pitunnel.com)'s online presence, showcasing property details, amenities, and other content essential for connecting with potential clients and the real estate community.
 
 ## 🚀 Getting Started
 
@@ -22,7 +22,7 @@ To deploy this infrastructure on your own system with your own rules, add a .env
 
 Click below to explore PodereIlGufo property and discover what makes PodereIlGufo Website so special:
 
-👉 [Visit PodereIlGufo](http://podereilgufo2-jb2.pitunnel.com).
+👉 [Visit PodereIlGufo](http://podereilgufo-jb2.pitunnel.com).
 
 
 ## ⚙️ Features
