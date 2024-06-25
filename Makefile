@@ -79,6 +79,12 @@ shellngx:
 # mysql -u MYSQL_USER -p MYSQL_DATABASE < backup.sql
 # set a password fro a database as root user MYSQL
 # ALTER USER 'username'@'hostname' IDENTIFIED BY 'newpassword';
+
+# PHP FPM CONFIGURATION
+# free -m to see how much memory is available
+# sudo vim /etc/php/7.4/fpm/pool.d/www.conf to change the configuration
+# ps -C php-fpm7.4 -o rss= to see how much memory is used by php-fpm process (Process Size)
+
 # FLUSH PRIVILEGES;
 
 
